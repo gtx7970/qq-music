@@ -9,7 +9,7 @@ export class HotSearch {
     //this.$el.addEventListener('click', this.startSearch.bind(this))
   }
   getData(){
-    fetch('qqMusic/json/hotSearch.json')
+    fetch('qq-music/json/hotSearch.json')
       .then(res => res.json())
       .then(json => this.render(json))
   }
